@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>1st RPG!</title>
+	<!-- reset  + css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+	<!-- Here goes nothin -->
+<body>
+<div id='container'>	
+	<div class="chooseCharBox">
+		<div type="button" class="char1" characterName='Alien Queen' health='150' attack='15' counterAttack='15'>
+			<h3>Alien Queen</h3>
+			<img class="starImage" src="assets/images/AlienQueen.jpg">
+			<p>150</p>
+		</div>
+		<div type="button" class="char2" characterName='Predator' health='200' attack='40' counterAttack='40'>
+			<h3>Predator</h3>
+			<img class="starImage" src="assets/images/TakeThat.jpg">
+			<p>200</p>
+		</div>
+		<div type="button" class="char3" characterName='Marvin the Martian' health='200' attack='5' counterAttack='5'>
+			<h3>Marvin the Martian</h3>
+			<img class="starImage" src="assets/images/Marvin.jpg">
+			<p>200</p>
+		</div>
+		<div type="button" class="char4" characterName='The Bugs' health='80' attack='15' counterAttack='12'>
+			<h3>The Bugs</h3>
+			<img class="starImage" src="assets/images/TheBug.jpg">
+			<p>80</p>
+		</div>
+		<h1><p1>CHOOSE YOUR HERO</p1></h1>
+	</div>
+		<br><br>
+	<div class="enemiesBox">
+		<div class="enemies"></div>
+		<h1><p1>CHOOSE YOUR PREY</p1></h1>
+	</div>
+	
+	<div class="fightBox">
+		<div class="fight"></div>
+		<p>THE ARENA</p>
+	</div>
+	<button class="attackBtn">Attack</button>
+	<div class="defenderBox">
+		<div class="defender">
+		</div>
+		<p>Defender</p>
+	</div>
+	<button onclick="resetGame()">Reset Game</button>
+</div>
+</div>
+
+<script>
+	function resetGame() {
+		location.reload();
+	}
+	</script>
+
+</body>
+<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- Javascript -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</html>
